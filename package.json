@@ -1,0 +1,53 @@
+{
+  "name": "eventium",
+  "description": "Async event manager for Node.js Objects -> new Eventium(object);object.eventium.on('open',function(object,meta,done){...});object.eventium.fire('open',meta,callback);",
+  "version": "0.2.0",
+  "author": {
+    "name": "Bifuer",
+    "email": "bifuer@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Chelo Quilón Gomez",
+      "email": "cheloq@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/bifuer/eventium",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bifuer/eventium"
+  },
+  "bugs": {
+    "url": "https://github.com/bifuer/eventium/issues",
+    "email" : "cheloq@gmail.com"
+  },
+  "keywords": [
+    "async events",
+    "events",
+    "event",
+    "event manager",
+    "node",
+    "js",
+    "javascript"
+  ],
+  "dependencies": {
+    "procedure":"*",
+    "objectarray":"*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "unit.js": "*"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "preferGlobal": false,
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
