@@ -20,6 +20,7 @@ function Eventium(target){
 
   Eventium.prototype.fire = function(name,meta,callback){
     var eventium = this;
+    var target = eventium.target;
     var ons = eventium.events.getAll(name,'name');
     if(ons.length>0){
       var procedure = new Procedure();
@@ -27,7 +28,7 @@ function Eventium(target){
       for(i=0,l=ons.length;i<l;i++){
         var event = ons[i];
         var targetClass = (target.constructor?target.constructor.name:false) || "unknowClass";
-        procedure.add('eventium.'+targetClass+'.'+name+"."+(event.handler.name || "unknowHandler"),event.handler,eventium.target,meta);
+        procedure.add('eventium.'+targetClass+'.'+name+"."+(event.handler.name || "unknowHandler"),event.handler,target,meta);
       }
       procedure.launch(function(errors){
         if(errors){

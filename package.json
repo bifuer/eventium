@@ -1,7 +1,7 @@
 {
   "name": "eventium",
   "description": "Async event manager for Node.js Objects -> new Eventium(object);object.eventium.on('open',function(object,meta,done){...});object.eventium.fire('open',meta,callback);",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Bifuer",
     "email": "bifuer@gmail.com"
