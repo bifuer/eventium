@@ -12,13 +12,13 @@
       "email": "cheloq@gmail.com"
     }
   ],
-  "homepage": "https://github.com/bifuer/eventium",
+  "homepage": "https://github.com/pillarsjs/eventium",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bifuer/eventium"
+    "url": "git://github.com/pillarsjs/eventium"
   },
   "bugs": {
-    "url": "https://github.com/bifuer/eventium/issues",
+    "url": "https://github.com/pillarsjs/eventium/issues",
     "email" : "cheloq@gmail.com"
   },
   "keywords": [
